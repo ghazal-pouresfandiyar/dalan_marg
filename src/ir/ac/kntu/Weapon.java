@@ -4,24 +4,43 @@ public class Weapon {
     private double accuracyRate;
     private double faultRate;  //1-accuracyRate;
     private int damageRate;
-    private boolean zoomOn;
+    static class AssaultRifle extends Weapon{
+        public AssaultRifle(Calibre calibre) {
+            super.damageRate = 10;
+            super.accuracyRate = 0.5;
+            if(calibre==Calibre.FIVE){
+                super.accuracyRate= (super.accuracyRate) + (super.accuracyRate*(15/100));
+            } else if(calibre==Calibre.SEVEN){
+                super.accuracyRate= (super.accuracyRate) - (super.accuracyRate*(10/100));
+                super.damageRate=super.damageRate + 10;
+            } else{
+                System.out.println("The calibre is not valid.");
+            }
 
-    class AssaultRifle extends Weapon{
-
+            super.faultRate = 1 - super.accuracyRate;
+        }
     }
-    class SniperRifle extends Weapon{
 
+    static class SniperRifle extends Weapon{
+        public SniperRifle(boolean zoom,Calibre calibre){
+            super.damageRate = 20;
+            super.accuracyRate = 0.6;
+
+            if(zoom==true) {
+                int zoomRate = (RandomHelper.nextInt() % 11) + 5;
+                super.accuracyRate = super.accuracyRate + (super.accuracyRate * (zoomRate / 100));
+            }
+
+            if(calibre==Calibre.FIVE){
+                super.accuracyRate= super.accuracyRate + (super.accuracyRate*(15/100));
+            }else if(calibre==Calibre.SEVEN){
+                super.accuracyRate= (super.accuracyRate) - (super.accuracyRate*(10/100));
+                super.damageRate=super.damageRate + 10;
+            }else{
+                System.out.println("The calibre is not valid.");
+            }
+
+            super.faultRate = 1 - super.accuracyRate;
+        }
     }
-    
-//    }double accuracyRate,int damageRate){
-//        this.accuracyRate=accuracyRate;
-//        this.faultRate=1-accuracyRate;
-//        this.damageRate=damageRate;
-//    }
-//    class Weapon(double accuracyRate,int damageRate,boolean zoom){
-//        this.damageRate=damageRate;
-//        int zoomRate = (RandomHelper.nextInt()%11)+5;
-//        this.accuracyRate = accuracyRate + (accuracyRate * (zoomRate / 100));
-//        this.faultRate=1-accuracyRate;
-//    }
 }

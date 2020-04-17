@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac775e8-d5de-4ba7-82fa-9af82a048e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ir/ac/kntu/RandomHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Calibre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Soldier.java" afterDir="false" />
@@ -18,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -70,7 +70,7 @@
       <updated>1586966976476</updated>
       <workItem from="1586966980025" duration="978000" />
       <workItem from="1587049758759" duration="1225000" />
-      <workItem from="1587125481043" duration="4906000" />
+      <workItem from="1587125481043" duration="12571000" />
     </task>
     <task id="LOCAL-00001" summary="creat base">
       <created>1587126746206</created>
@@ -94,10 +94,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="28" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586966989891" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1587128819215">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1587139702689">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1587128819215" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1587139702689" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587126744986">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
