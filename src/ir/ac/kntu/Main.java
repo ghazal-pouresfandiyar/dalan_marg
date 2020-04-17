@@ -3,21 +3,11 @@ package ir.ac.kntu;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import static ir.ac.kntu.Calibre.FIVE;
-import static ir.ac.kntu.Calibre.SEVEN;
-
 public class Main {
     public static void main(String[] args) {
         List <Soldier> deadList=new ArrayList<>();
         List <Soldier> redTeam=new ArrayList<>();
         List <Soldier> orangeTeam=new ArrayList<>();
-        Weapon s1=new Weapon.AssaultRifle(FIVE);
-        Weapon s2=new Weapon.AssaultRifle(SEVEN);
-        Weapon s3=new Weapon.SniperRifle(true,FIVE);
-        Weapon s4=new Weapon.SniperRifle(false, FIVE);
-        Weapon s5=new Weapon.SniperRifle(true,SEVEN);
-        Weapon s6=new Weapon.SniperRifle(false, SEVEN);
         Scanner scan =new Scanner(System.in);
         System.out.println("Enter the number of members of each team:");
         int numberOfMembers=scan.nextInt();
@@ -29,6 +19,22 @@ public class Main {
         for(int i=0;i<numberOfMembers;i++){
             Soldier soldier=new Soldier(i+1);
             orangeTeam.add(soldier);
+        }
+        int roundCounter=0;
+        while(redTeam.size()==0 || orangeTeam.size()==0){
+            System.out.println("############# Round "+roundCounter+"#############");
+            for (int i=0;i<redTeam.size();i++){
+                System.out.print("[R"+redTeam.get(i).getNumber()+"$"+redTeam.get(i).getLife()+"@"+redTeam.get(i).getWeapon().getName()+"@"+redTeam.get(i).getWeapon().getCaliber()+"]");
+            }
+            System.out.println();
+            for (int i=0;i<orangeTeam.size();i++){
+                System.out.print("[O"+orangeTeam.get(i).getNumber()+"$"+orangeTeam.get(i).getLife()+"@"+orangeTeam.get(i).getWeapon().getName()+"@"+orangeTeam.get(i).getWeapon().getCaliber()+"]");
+            }
+            System.out.println();
+            System.out.println("Number of alive red soldiers:"+redTeam.size());
+            System.out.println("Number of alive orange soldiers:"+orangeTeam.size());
+            System.out.println("############# End Round "+roundCounter+"#############");
+            roundCounter++;
         }
     }
 }
