@@ -9,8 +9,14 @@ public class Soldier {
     private int life=100;
     private int number;
     private Weapon weapon;
+
+    public void setLife(int life) {
+        this.life = life;
+    }
+
     public Soldier(int number) {
         this.number = number;
+        this.life=100;
         int kindOfWeapon=RandomHelper.nextInt()%6;
         switch (kindOfWeapon){
             case 0:

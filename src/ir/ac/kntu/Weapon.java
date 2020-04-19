@@ -14,6 +14,14 @@ public class Weapon {
         return caliber;
     }
 
+    public double getAccuracyRate() {
+        return accuracyRate;
+    }
+
+    public int getDamageRate() {
+        return damageRate;
+    }
+
     static class AssaultRifle extends Weapon{
         public AssaultRifle(Caliber caliber) {
             super.name="AssaultRifle";

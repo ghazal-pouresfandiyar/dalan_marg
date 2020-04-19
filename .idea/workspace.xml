@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac775e8-d5de-4ba7-82fa-9af82a048e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Caliber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Calibre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Game.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Soldier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/ac/kntu/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/kntu/Weapon.java" afterDir="false" />
@@ -94,6 +92,8 @@
       <workItem from="1587049758759" duration="1225000" />
       <workItem from="1587125481043" duration="19278000" />
       <workItem from="1587166406816" duration="963000" />
+      <workItem from="1587167409653" duration="485000" />
+      <workItem from="1587326891050" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="creat base">
       <created>1587126746206</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587158113529</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add class game &amp; weapon &amp; soldier &amp; randomhelper &amp; enum caliber">
+      <created>1587167453066</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587167453067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,45 +125,46 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creat base" />
     <MESSAGE value="add class weapon &amp; soldier &amp; randomhelper &amp; enum calibre" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class weapon &amp; soldier &amp; randomhelper &amp; enum calibre" />
+    <MESSAGE value="add class game &amp; weapon &amp; soldier &amp; randomhelper &amp; enum caliber" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class game &amp; weapon &amp; soldier &amp; randomhelper &amp; enum caliber" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="28" key="#Project_Structure" timestamp="1586966989891">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="28" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586966989891" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1587161698934">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1587329033305">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1587161698934" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1587329033305" />
     <state x="413" y="120" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587164679233">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="120" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1587164679233" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587158110162">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587167448918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587158110162" />
-    <state width="1320" height="2" key="GridCell.Tab.0.bottom" timestamp="1587165927712">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587167448918" />
+    <state width="1323" height="266" key="GridCell.Tab.0.bottom" timestamp="1587331212285">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587165927712" />
-    <state width="1320" height="2" key="GridCell.Tab.0.center" timestamp="1587165927712">
+    <state width="1323" height="266" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587331212285" />
+    <state width="1323" height="266" key="GridCell.Tab.0.center" timestamp="1587331212285">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587165927712" />
-    <state width="1320" height="2" key="GridCell.Tab.0.left" timestamp="1587165927712">
+    <state width="1323" height="266" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587331212285" />
+    <state width="1323" height="266" key="GridCell.Tab.0.left" timestamp="1587331212285">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587165927712" />
-    <state width="1320" height="2" key="GridCell.Tab.0.right" timestamp="1587165927712">
+    <state width="1323" height="266" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587331212285" />
+    <state width="1323" height="266" key="GridCell.Tab.0.right" timestamp="1587331212285">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1320" height="2" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587165927712" />
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1587167408611">
+    <state width="1323" height="266" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587331212285" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1587331253004">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587167408611" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587331253004" />
     <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587126723892">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
