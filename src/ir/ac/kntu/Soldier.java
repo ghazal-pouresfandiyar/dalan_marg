@@ -17,7 +17,7 @@ public class Soldier {
     public Soldier(int number) {
         this.number = number;
         this.life=100;
-        int kindOfWeapon=RandomHelper.nextInt()%6;
+        int kindOfWeapon=RandomHelper.nextInt(6);
         switch (kindOfWeapon){
             case 0:
                 this.weapon=new Weapon.AssaultRifle(CALIBER5MM);
@@ -58,7 +58,7 @@ public class Soldier {
             for (int i = 0; i < soldierList.size() - 1; i++) {
                 soldierList.set(i, soldierList.get(i + 1));
             }
-            soldierList.set(soldierList.size(),temp);
+            soldierList.set(soldierList.size()-1,temp);
         }
         else{
             deadList.add(soldier);
