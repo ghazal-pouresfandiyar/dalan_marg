@@ -50,10 +50,18 @@ public class Main {
         boolean randomBoolean=RandomHelper.nextBoolean();
         if(randomBoolean==true) {    //red soldier will start
             fight(redTeam.get(0),orangeTeam.get(0));
+            if(orangeTeam.get(0).getLife()>0){
+                fight(orangeTeam.get(0),redTeam.get(0));
+            }
             Soldier.shiftSoldiers(orangeTeam,orangeTeam.get(0),deadList);
+            Soldier.shiftSoldiers(redTeam,redTeam.get(0),deadList);
         }else { // orange soldier will start
             fight(orangeTeam.get(0),redTeam.get(0));
+            if(redTeam.get(0).getLife()>0){
+                fight(redTeam.get(0),orangeTeam.get(0));
+            }
             Soldier.shiftSoldiers(redTeam,redTeam.get(0),deadList);
+            Soldier.shiftSoldiers(orangeTeam,orangeTeam.get(0),deadList);
         }
     }
     public static void fight(Soldier first,Soldier second){
